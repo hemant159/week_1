@@ -1,10 +1,9 @@
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-  //eror fixed
-  if (req.url == '/') {
+  if (req.url === '/') {
     res.statusCode = 200;
-    res.end('Hello World');
+    res.end('Hello World skt');
   } else {
     res.statusCode = 404;
     res.end('Not Found');
