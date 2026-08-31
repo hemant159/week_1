@@ -1,0 +1,19 @@
+{
+  "name": "week_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wthstranger/weeK_1.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/wthstranger/weeK_1/issues"
+  },
+  "homepage": "https://github.com/wthstranger/weeK_1#readme"
+}
