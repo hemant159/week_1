@@ -4,6 +4,7 @@ function requestHandler(req, res) {
   if (req.url === '/') {
     res.statusCode = 200;
     console.log('Sending Hello World');
+    res.end("Succesfully executed")
   } else {
     res.statusCode = 404;
     res.end('Not Found');

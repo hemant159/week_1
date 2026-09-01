@@ -1,7 +1,9 @@
 const express = require('express');
 const app = express();
 
-app.post('/users', (req, res) => {
+app.use(express.json())
+
+app.post('/users/:name', (req, res) => {
   const name = req.body.name;
   res.send('Received: ' + name);
 });

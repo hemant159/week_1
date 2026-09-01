@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-app.get('about', (req, res) => {
+app.get('/about', (req, res) => { // / is not given
   res.send('This is the about page');
 });
 
