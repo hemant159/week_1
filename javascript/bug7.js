@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/users/:id', (req, res) => {
-  const userId = req.param.id;
+  const userId = req.params.id;
   res.send('User ID: ' + userId);
 });
 
