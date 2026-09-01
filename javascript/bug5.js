@@ -1,7 +1,11 @@
 const express = require('express');
 const app = express();
 
-app.get('about', (req, res) => {
+// app.get('about', (req, res) => {
+//   res.send('This is the about page');
+// });
+
+app.get('/about', (req, res) => {
   res.send('This is the about page');
 });
 
