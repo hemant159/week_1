@@ -1,9 +1,17 @@
 const express = require('express');
 const app = express();
 
-app.post('/users', (req, res) => {
-  const name = req.body.name;
-  res.send('Received: ' + name);
+app.use(express.json());
+
+app.get('/', (req, res) => {
+    res.send('Server is working');
 });
 
-app.listen(3000, () => console.log('Server running on port 3000'));
+app.post('/users', (req, res) => {
+    const name = req.body.name;
+    res.send('Received: ' + name);
+});
+
+app.listen(3000, () => {
+    console.log('Server running on port 3000');
+});
